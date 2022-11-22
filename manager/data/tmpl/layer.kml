@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<!-- GSI Version 2.0 - 2014/07/16 -->
+<Document>
+	<name>地理院地図KML</name>
+	<open>1</open>
+	<Folder>
+		<name>地理院地図KML_標準地図- NetworkLink</name>
+		<Snippet maxLines="5">
+<![CDATA[
+この地図画像は、<a href="http://www.gsi.go.jp/">国土地理院</a>から試験的に配信されています。
+ご利用の際は、<a href="http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html">国土地理院コンテンツ利用規約</a>を遵守するとともに、ご利用のシステムの利用規約等を遵守してください。国土地理院は、利用に関連する損失または損害について一切の責任を負いません。
+]]>
+		</Snippet>
+		<description>
+<![CDATA[
+<iFrame name="contract4cjp" src="http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html" width="1280" height="800" frameborder="0" seamless></iFrame>
+]]>
+		</description>
+		<atom:author>
+			<atom:name>Geospatial Information Authority of Japan @MLIT</atom:name>
+		</atom:author>
+		<atom:link href="http://www.gsi.go.jp/" />
+		<open>0</open>
+		<NetworkLink>
+			<name>___DATA_NAME___</name>
+			<open>1</open>
+			<description></description>
+			<Url>
+				<href>http://kmlnetworklink.gsi.go.jp/wskmlnetworklinkgsi/?XYTYPE=___DATA_XYTYPE___&amp;ZMIN=___DATA_ZMIN___&amp;ZMAX=___DATA_ZMAX___&amp;IMAGETYPE=___DATA_IMAGETYPE___&amp;BASEURL=___DATA_BASEURL___</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>0.1</viewRefreshTime>
+			</Url>
+		</NetworkLink>
+	</Folder>
+</Document>
+</kml>
