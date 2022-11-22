@@ -1,0 +1,91 @@
+{
+  "layers": [
+    {
+      "type": "Layer",
+      "id": "moridokanousei",
+      "title": "盛土可能性(赤)を含む標高変化",
+      "url": "https://maps.gsi.go.jp/xyz/moridokanousei/{z}/{x}/{y}.png",
+      "cocotile": true,
+      "minZoom": 10,
+      "maxZoom": 17,
+      "maxNativeZoom": 15,
+      "html": "<div class=\"gsi_layerinfo_title\">標高変化量</div><div class=\"gsi_layerinfo_kaisetu\">　基盤地図情報数値標高モデルの5ｍメッシュ標高から10ｍメッシュ標高を差し引いた標高の変化量。標高が増加した赤色部分に盛り土の可能性がある。</div><div class=\"gsi_layerinfo_title\">5ｍメッシュ標高とは</div><div class=\"gsi_layerinfo_kaisetu\">　航空レーザ測量により作成したもので、2008年頃から本格的な整備を開始し、主要沿岸部・都市部主要河川等全国の約7割で整備済み。標高精度は0.3m（植生等がない場合）。<a href=\"https://fgd.gsi.go.jp/download/menu.php\" target=\"_blank\">基盤地図情報ダウンロードサービス</a>から無償でダウンロード可能。</div><div class=\"gsi_layerinfo_title\">10ｍメッシュ標高とは</div><div class=\"gsi_layerinfo_kaisetu\">　1/25,000地形図のデータを基に作成したもので、全国整備済み。地域によって異なるが、1990年から2000年頃までの地形を反映している。水平精度は17.5m、標高精度は5.0m。<a href=\"https://fgd.gsi.go.jp/download/menu.php\" target=\"_blank\">基盤地図情報ダウンロードサービス</a>から無償でダウンロード可能。</div><div class=\"gsi_layerinfo_title\">凡例</div><div class=\"gsi_layerinfo_kaisetu\">　標高差分により地形変化可能性箇所（＋5m以上）を抽出し色分け。</div><div style=\"text-align:center;\"><img src=\"https://maps.gsi.go.jp/moridokanousei/legend/20210715morido_hyoukousabun_legend2.png\" alt=\"凡例\" width=120></div>"
+    },
+    {
+      "type": "LayerGroup",
+      "title": "土砂災害警戒区域",
+      "iconUrl": "",
+      "toggleall": false,
+      "entries": [
+        {
+          "type": "Layer",
+          "id": "05_kyukeishakeikaikuiki",
+          "title": "急傾斜地の崩壊",
+          "url": "https://disaportaldata.gsi.go.jp/raster/05_kyukeishakeikaikuiki/{z}/{x}/{y}.png",
+          "cocotile": true,
+          "minZoom": 2,
+          "maxZoom": 17,
+          "html": "国土交通省「国土数値情報」のデータを使用しています。<br>詳しくは<a href=\"https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A33-v1_3.html\" target=\"_blank\">こちら</a>をご参照ください。<br>色が示す範囲は<a href=\"https://disaportal.gsi.go.jp/maps/image/legend/dosha_keikai.png\" target=\"_blank\">こちらの凡例</a>を確認してください。"
+        },
+        {
+          "type": "Layer",
+          "id": "05_dosekiryukeikaikuiki",
+          "title": "土石流",
+          "url": "https://disaportaldata.gsi.go.jp/raster/05_dosekiryukeikaikuiki/{z}/{x}/{y}.png",
+          "cocotile": true,
+          "minZoom": 2,
+          "maxZoom": 17,
+          "html": "国土交通省「国土数値情報」のデータを使用しています。<br>詳しくは<a href=\"https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A33-v1_3.html\" target=\"_blank\">こちら</a>をご参照ください。<br>色が示す範囲は<a href=\"https://disaportal.gsi.go.jp/maps/image/legend/dosha_keikai.png\" target=\"_blank\">こちらの凡例</a>を確認してください。"
+        },
+        {
+          "type": "Layer",
+          "id": "05_jisuberikeikaikuiki",
+          "title": "地すべり",
+          "url": "https://disaportaldata.gsi.go.jp/raster/05_jisuberikeikaikuiki/{z}/{x}/{y}.png",
+          "cocotile": true,
+          "minZoom": 2,
+          "maxZoom": 17,
+          "html": "国土交通省「国土数値情報」のデータを使用しています。<br>詳しくは<a href=\"https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A33-v1_3.html\" target=\"_blank\">こちら</a>をご参照ください。<br>色が示す範囲は<a href=\"https://disaportal.gsi.go.jp/maps/image/legend/dosha_keikai.png\" target=\"_blank\">こちらの凡例</a>を確認してください。"
+        }
+      ]
+    },
+    {
+      "type": "LayerGroup",
+      "title": "土砂災害危険箇所",
+      "iconUrl": "",
+      "toggleall": false,
+      "entries": [
+        {
+          "type": "Layer",
+          "id": "05_kyukeisyachihoukai",
+          "title": "急傾斜地崩壊危険箇所",
+          "url": "https://disaportaldata.gsi.go.jp/raster/05_kyukeisyachihoukai/{z}/{x}/{y}.png",
+          "cocotile": true,
+          "minZoom": 2,
+          "maxZoom": 17,
+          "html": "国土交通省「国土数値情報」のデータを使用しています。<br>詳しくは<a href=\"https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A26.html\" target=\"_blank\">こちら</a>をご参照ください。"
+        },
+        {
+          "type": "Layer",
+          "id": "05_dosekiryukikenkeiryu",
+          "title": "土石流危険渓流",
+          "url": "https://disaportaldata.gsi.go.jp/raster/05_dosekiryukikenkeiryu/{z}/{x}/{y}.png",
+          "cocotile": true,
+          "minZoom": 2,
+          "maxZoom": 17,
+          "html": "国土交通省「国土数値情報」のデータを使用しています。<br>詳しくは<a href=\"https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A26.html\" target=\"_blank\">こちら</a>をご参照ください。"
+        },
+        {
+          "type": "Layer",
+          "id": "05_jisuberikikenkasyo",
+          "title": "地すべり危険箇所",
+          "url": "https://disaportaldata.gsi.go.jp/raster/05_jisuberikikenkasyo/{z}/{x}/{y}.png",
+          "cocotile": true,
+          "minZoom": 2,
+          "maxZoom": 17,
+          "html": "国土交通省「国土数値情報」のデータを使用しています。<br>詳しくは<a href=\"https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A26.html\" target=\"_blank\">こちら</a>をご参照ください。"
+        }
+      ]
+    }
+  ]
+}

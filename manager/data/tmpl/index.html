@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>地理院地図KMLデータ|地理空間情報ライブラリー</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	<div id="header">
+	<h1>
+	<img src="images/logo.png">
+	地理院地図KMLデータ
+	</h1>
+	<p><a href="http://www.gsi.go.jp/" target="_blank" title="国土地理院トップを表示">●国土地理院トップ</a></p>
+	</div>
+</header>
+<div id="container">
+<div id="kmllistContents">
+
+
+
+
+
+<div id="updatelistTitle">更新履歴</div>
+<div id="updatelist">
+<table border="0">
+<tbody>
+<!--___TMPL_UPDATE_DELIMITER___-->
+<tr>
+<td class="date">___UPDATE_DATE___</td>
+<td><div class="pankuzu">___UPDATE_PANKUZU___</div><div class="comm">___UPDATE_COMM___</div></td>
+</tr>
+<!--___TMPL_UPDATE_DELIMITER___-->
+</tbody>
+</table>
+</div><!--/#updatelist-->
+
+
+
+
+
+<div id="dataTitle">KML配信ファイルリスト</div>
+
+
+
+
+
+<div id="kmlsearchForm">
+<form action="javascript:" method="get">
+
+<input type="text" name="kmlsearch" id="kmlsearch" placeholder="キーワードを入力してください。" title="KMLの検索">
+
+<div id="kmlsearchClear">×</div>
+
+<div id="loading" style="visibility: hidden;">
+<img src="images/loading.gif" alt="読み込み中" title="読み込み中">
+</div><!--/#loading-->
+<input id="submit_button" type="submit" value="search">
+
+</form>
+</div><!--/#kmlsearchform-->
+
+
+
+
+
+<div id="kmlsearchResult">
+全 <span id="allCount">___DATA_ALLCOUNT___</span>件中 <span id="displayCount">___DATA_ALLCOUNT___</span>件を表示中
+</div><!--/#kmlsearchresult-->
+
+
+
+
+
+<ul id="tabs">
+<!--___TMPL_TAB_DELIMITER___-->
+<li class="___DATA_TAB_CLASS___">___DATA_TAB___</li>
+<!--___TMPL_TAB_DELIMITER___-->
+</ul><!--/#tabs-->
+
+
+
+
+
+<div id="dataList">
+
+<!--___TMPL_GROUP_DELIMITER___-->
+<div class="layerGroup">
+<table border="0">
+<tr>
+<td colspan="3"><!--___TMPL_TAG_DELIMITER___--><span class="tag">___DATA_TAG___</span><!--___TMPL_TAG_DELIMITER___--></td>
+</tr>
+<tr>
+<th scope="row">地図、空中写真の種類</th>
+<th scope="row">説明</th>
+<th scope="row">直接URLを指定する場合は、こちらのURLを指定してください</th>
+</tr>
+<!--___TMPL_LAYER_DELIMITER___-->
+<tr class="layer" id="___DATA_LAYERID___">
+<td class="layerName">___DATA_LAYERNAME___</td>
+<td class="layerDesc">___DATA_LAYERDESC___</td>
+<td class="layerHref"><a href="___DATA_LAYERHREF___" layerid="___DATA_LAYERID___" title="___DATA_LAYERNAME___" onclick="GSIKML.access(this);">___DATA_LAYERHREF___</a></td>
+</tr>
+<!--___TMPL_LAYER_DELIMITER___-->
+</table>
+</div><!--/.layerGroup-->
+<!--___TMPL_GROUP_DELIMITER___-->
+
+</div><!--/#dataList-->
+
+
+
+
+
+</div><!--/#kmllistContents-->
+</div><!--/#container-->
+<footer><p>Copyright. &copy; Geospatial Information Authority of Japan. ALL RIGHTS RESERVED.</p></footer>
+
+
+
+
+
+<script type="text/javascript" src="lib/jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="js/GSIKML.js"></script>
+<script type="text/javascript">
+<!--
+GSIKML.init();
+//-->
+</script>
+
+
+
+
+
+</body>
+</html>

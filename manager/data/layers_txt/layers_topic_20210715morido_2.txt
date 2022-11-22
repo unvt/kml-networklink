@@ -1,0 +1,19 @@
+{
+  "layers": [
+    {
+      "type": "LayerGroup",
+      "title": "ベースマップ",
+      "toggleall": false,
+      "entries": [
+        {
+          "type": "Layer",
+	      "id": "moridokanousei",
+    	  "title": "盛土可能性(赤)を含む標高変化",
+      	  "url": "https://maps.gsi.go.jp/xyz/moridokanousei/{z}/{x}/{y}.png",
+          "cocotile": true,
+          "html" :  "<div class=\"gsi_layerinfo_title\">標高変化量</div><div class=\"gsi_layerinfo_kaisetu\">　基盤地図情報数値標高モデルの5ｍメッシュ標高から10ｍメッシュ標高を差し引いた標高の変化量。標高が増加した赤色部分に盛り土の可能性がある。</div><div class=\"gsi_layerinfo_title\">5ｍメッシュ標高とは</div><div class=\"gsi_layerinfo_kaisetu\">　航空レーザ測量により作成したもので、2008年頃から本格的な整備を開始し、主要沿岸部・都市部主要河川等全国の約7割で整備済み。標高精度は0.3m（植生等がない場合）。<a href=\"https://fgd.gsi.go.jp/download/menu.php\" target=\"_blank\">基盤地図情報ダウンロードサービス</a>から無償でダウンロード可能。</div><div class=\"gsi_layerinfo_title\">10ｍメッシュ標高とは</div><div class=\"gsi_layerinfo_kaisetu\">　1/25,000地形図のデータを基に作成したもので、全国整備済み。地域によって異なるが、1990年から2000年頃までの地形を反映している。水平精度は17.5m、標高精度は5.0m。<a href=\"https://fgd.gsi.go.jp/download/menu.php\" target=\"_blank\">基盤地図情報ダウンロードサービス</a>から無償でダウンロード可能。</div><div class=\"gsi_layerinfo_title\">凡例</div><div class=\"gsi_layerinfo_kaisetu\">　標高差分により地形変化可能性箇所（＋5m以上）を抽出し色分け。</div><div style=\"text-align:center;\"><img src=\"https://maps.gsi.go.jp/moridokanousei/legend/20210715morido_hyoukousabun_legend2.png\" alt=\"凡例\" width=120></div>"
+        },
+      ]
+    }
+  ]
+}

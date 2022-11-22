@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+body{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background:#F7F5F6;
+	margin:0; padding:0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+#container {
+	margin:0 1em;
+	padding-top:6em;
+}
+
+/*******************************
+
+ header
+
+*******************************/
+#header{
+	display:flex;	display:-webkit-flex;
+	padding:5px 10px;
+	background:#52B2D0;
+	color:#fff;
+	-webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+	position:fixed;
+	width:100%;
+}
+
+#header h1{ margin:0; font-size:1.6em;}
+#header h1 img{ display:inline-block; vertical-align:middle;}
+
+#header p{
+	margin:0 0 0 auto; align-self:center;
+}
+#header p a{ color:#fff; text-decoration:none;}
+#header p a:hover{color: rgba(255, 255, 255, 0.5);}
+
+footer{
+	background:#52B2D0;
+	color:#fff;
+	text-align:center;
+	padding:1em;
+	margin-top:2em;	
+}
+footer p{ margin:0;}
+/*******************************
+
+ コンテンツ全体
+
+*******************************/
+#dataList table {
+	margin-bottom: 30px;
+	width: 100%;
+	border-collapse:collapse;
+/*	table-layout:fixed;*/
+}
+
+#dataList th {
+	padding: 5px 2px;
+	background-color: #7cb3ff;
+	border-right:1px solid #fff;
+}
+#dataList tr:nth-child(even) td{ background:#f4f8fc;}
+
+#dataList td {
+	padding: 5px;
+	border: 1px solid #CCC;
+	word-break : break-all;
+}
+#dataList tr:nth-child(1) td {
+	border: 0;
+}
+#dataList tr:nth-child(n+3) td:nth-child(1) {
+	width: 35%;
+}
+#dataList td:nth-child(2){
+	font-size:0.8em;
+}
+
+#dataList td:nth-child(3) {
+	width: 45%;
+	font-size:0.75em;
+}
+
+
+
+/*******************************
+
+ 検索
+
+*******************************/
+#kmlsearch {
+	padding: 10px;
+	width: 93%;
+	font-size: 0.93em;
+	background-color: #ecf2fa;
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+#kmlsearchClear {
+	display: inline-block;
+	font-size: 1.25em;
+	font-weight: bold;
+	cursor: pointer;
+}
+#loading {
+	display: inline-block;
+	vertical-align: middle;
+}
+input#submit_button {
+	display:none;
+
+}
+
+
+
+/*******************************
+
+ 一覧
+
+*******************************/
+#dataTitle {
+	margin: 0;
+	font-size:1.6em;
+	padding:5px;
+	color:#fff;
+	text-align: center;
+	background:#4484ce;
+	border-top: solid 10px #fff;
+	margin-bottom: 10px;
+}
+#dataList {
+	width: 100%;
+	background:#fff;
+	padding:10px;
+}
+
+#dataList .tag {
+	display: inline-block;
+	margin:0.5em 5px 0.5em 0;
+	padding:5px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size:0.9em;
+	background:#eee;
+-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.7);
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.7);
+}
+
+
+
+
+
+/*******************************
+
+ タブ
+
+*******************************/
+#tabs {
+	margin: 20px 0 0;
+	padding: 0;
+	list-style:none;
+	width: 100%;
+	display:table;
+	border-collapse:collapse;
+}
+.tab {
+	font-size:1.1vw;
+	display: table-cell;
+	vertical-align:top;
+	padding:10px 5px;
+	text-align:center;
+	font-weight: bold;
+	cursor: pointer;
+	border:1px solid #b7b0b0;
+	color:#666;
+	background:#eee;
+}
+@media screen and (max-width: 950px) {
+.tab {
+	font-size:0.8rem !important;
+}
+}
+
+
+
+
+.tab.active {
+	color:#0088ff;
+	border-top  : 4px solid #0088ff;
+	border-left : 1px solid #b7b0b0;
+	border-right: 1px solid #b7b0b0;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+}
+.tab:hover{
+	border-top  : 4px solid #007fee;
+	color:#007fee;
+}
+
+
+
+
+
+
+/*******************************
+
+ 更新履歴
+
+*******************************/
+#updatelistTitle {
+	border-bottom:solid 5px #3C74B4;
+	color:#2F5B8E;
+	text-align: center;
+	font-size:1.2em;
+}
+
+#updatelist{
+	display:block;
+  overflow-y: scroll;
+  height: 20em;
+}
+#updatelist table {
+	margin-bottom: 30px;
+	width: 100%;
+	border-collapse:collapse;
+}
+#updatelist th{ border-bottom:solid 5px #3C74B4; color:#2F5B8E;}
+#updatelist td{ border-bottom:solid 1px #73a3da; font-size:0.8em; padding:0.5em 0.3em; color:#2F5B8E;}
+
+#updatelist td:nth-child(1) {
+	width:10em;
+	padding-left:1em;
+  }
+#updatelist .comm {
+	padding-left: 30px;
+}
+
+/*
+#updatelist .date {
+	width: 10%;
+}
+*/
