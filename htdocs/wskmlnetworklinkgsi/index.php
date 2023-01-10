@@ -31,6 +31,9 @@ foreach (array_keys($_GET) as $key) {
     }
 	function ConvLatLng2XY($LatLng, int $z) { // 緯度経度に該当するタイル番号を返します。
    	global $PointXY;
+   			if ( $LatLng['lat'] == "90" ) {
+				$LatLng['lat'] = 89.999999;
+			}
 			$ltLatRad = (double)$LatLng['lat'] * M_PI / 180.0;
 			$ltLngRad = (double)$LatLng['lng'] * M_PI / 180.0;
 			$R = (double)128.0 / M_PI;
